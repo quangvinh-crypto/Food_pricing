@@ -1,0 +1,157 @@
+# =============================================
+# GITIGNORE - Website Vegetable Project
+# =============================================
+
+# ==================== SENSITIVE FILES ====================
+# Environment variables (chứa keys, passwords)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+*.env
+
+# Cloudinary config backup
+*cloudinary*config*.json
+
+# Database credentials
+*db*config*.json
+database.config.js
+
+# ==================== NODE_MODULES ====================
+node_modules/
+*/node_modules/
+**/node_modules/
+
+# npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# pnpm
+pnpm-debug.log*
+.pnpm-store/
+
+# ==================== BUILD & DIST ====================
+dist/
+build/
+.next/
+out/
+.nuxt/
+.cache/
+.parcel-cache/
+
+# ==================== OS FILES ====================
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+# ==================== IDE / EDITOR ====================
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains (WebStorm, IntelliJ)
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ==================== LOGS ====================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# ==================== TEMPORARY FILES ====================
+tmp/
+temp/
+*.tmp
+*.temp
+.cache/
+
+# ==================== TEST COVERAGE ====================
+coverage/
+*.lcov
+.nyc_output/
+
+# ==================== DOCUMENTATION (không liên quan) ====================
+# File markdown trong thư mục dự án (trừ README.md chính)
+TODO-NCKH.md
+
+# Không push các file .md trong node_modules
+**/node_modules/**/*.md
+
+# ==================== BACKEND SPECIFIC ====================
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Upload folders (nếu lưu local, nhưng đang dùng Cloudinary nên không cần)
+backend/uploads/
+backend/public/uploads/
+
+# ==================== FRONTEND SPECIFIC ====================
+# React build
+frontend/build/
+frontend/dist/
+
+# ==================== DATABASE ====================
+# Database files (nếu dùng SQLite local)
+*.db
+*.sqlite
+*.sqlite3
+
+# SQL dumps
+*.sql.gz
+*.sql.zip
+backup*.sql
+
+# ==================== MISC ====================
+# Lock files
+*.lock
+yarn.lock
+
+# Certificates
+*.pem
+*.key
+*.cert
+
+# Archives
+*.zip
+*.tar
+*.gz
+*.rar
+
+# ==================== KEEP THESE FILES ====================
+# Explicitly track these important files
+!README.md
+!backend/README_COMPLETE.md
+!frontend/README.md
+!.gitignore
+!package.json
